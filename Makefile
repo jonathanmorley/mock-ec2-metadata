@@ -7,7 +7,7 @@
 # Program version
 VERSION := $(shell grep "const Version " version.go | sed -E 's/.*"(.+)"$$/\1/')
 
-INSTALL_PATH=$(GOPATH)/src/github.com/NYTimes/mock-ec2-metadata
+INSTALL_PATH=$(GOPATH)/src/github.com/jonathanmorley/mock-ec2-metadata
 
 default: build
 
