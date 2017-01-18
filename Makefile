@@ -31,7 +31,7 @@ build:
 	$(GOPATH)/bin/gox -output "bin/{{.Dir}}_${VERSION}_{{.OS}}_{{.Arch}}" -os="linux" -os="darwin" -arch="386" -arch="amd64" ./
 
 release:
-	$(GOPATH)/bin/ghr --username NYTimes --token ${GITHUB_TOKEN} -r mock-ec2-metadata --replace ${VERSION} bin/
+	$(GOPATH)/bin/ghr --username jonathanmorley --token ${GITHUB_TOKEN} -r mock-ec2-metadata --replace ${VERSION} bin/
 
 clean:
 	@test ! -e bin/|| rm -f bin/*
