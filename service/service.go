@@ -110,7 +110,7 @@ func (s *MetadataService) GetUserData(w http.ResponseWriter, r *http.Request) {
 }
 
 func (s *MetadataService) GetIndex(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Mock EC2 Metadata Service")
+	fmt.Fprintf(w, "2009-04-04")
 }
 
 // Endpoints is a listing of all endpoints available in the MetadataService.
